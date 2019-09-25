@@ -27,6 +27,7 @@ def initial_round
   sum += 2.times do deal_card
 end
   display_card_total(sum)
+  return sum
 end
 
 def hit?
