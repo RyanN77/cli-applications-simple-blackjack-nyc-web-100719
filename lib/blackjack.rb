@@ -9,7 +9,7 @@ end
 def display_card_total
   sum = 0 
   2.times {sum += deal_card}
-  return sum
+  puts "Your cards add up to #{sum}"
 end
 
 def prompt_user
