@@ -55,6 +55,14 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome 
+  sum = initial_round
+  while sum < 21
+  prompt_user
+  sum = hit?(sum)
+  end
+  if sum > 21
+  end_game(sum)
+end
 end
     
