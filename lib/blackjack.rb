@@ -57,7 +57,6 @@ end
 def runner
   welcome 
   sum = initial_round
-  prompt_user
   sum = hit?(sum)
   if sum > 21
   end_game(sum)
