@@ -3,11 +3,14 @@ def welcome
 end
 
 def deal_card
-  (Math.floor()*10 + 1)
+  return (Random.rand(10) + 1)
 end
 
 def display_card_total
-  # code #display_card_total here
+  sum = 0 
+  2.times do sum += deal_card
+  end
+  return sum
 end
 
 def prompt_user
