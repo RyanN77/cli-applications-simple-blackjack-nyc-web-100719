@@ -7,7 +7,6 @@ def deal_card
 end
 
 def display_card_total(card_total)
-  2.times {card_total += deal_card}
   puts "Your cards add up to #{card_total}"
 end
 
@@ -24,7 +23,8 @@ def end_game(card_total)
 end
 
 def initial_round
-  # code #initial_round here
+  2.times {deal_card}
+  display_card_total
 end
 
 def hit?
