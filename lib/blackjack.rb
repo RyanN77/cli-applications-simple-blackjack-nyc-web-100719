@@ -42,6 +42,7 @@ def hit?(card_total)
     break
   else if command != "s" || "h"
     invalid_command
+    end
   end
 end
 
