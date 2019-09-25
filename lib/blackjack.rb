@@ -9,7 +9,6 @@ end
 def display_card_total
   sum = 0 
   2.times do sum += deal_card
-  end
   return sum
 end
 
