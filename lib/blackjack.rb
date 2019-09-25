@@ -6,10 +6,9 @@ def deal_card
   return (Random.rand(10) + 1)
 end
 
-def display_card_total
-  sum = 0 
-  2.times {sum += deal_card}
-  puts "Your cards add up to #{sum}"
+def display_card_total(card_total)
+  2.times {card_total += deal_card}
+  puts "Your cards add up to #{card_total}"
 end
 
 def prompt_user
