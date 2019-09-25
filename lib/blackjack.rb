@@ -24,7 +24,7 @@ end
 
 def initial_round
   sum = 0
-  sum = 2.times {deal_card}
+  sum += deal_card
   display_card_total(sum)
   return sum
 end
